@@ -1,0 +1,54 @@
+#menu{
+  nav.navbar{
+    @include flex(flex , space-between , null);
+    height: 60px;
+    ul{
+      @include margin-pading( 0 , 1.5rem , 0 ,0);
+      @include margin-pading( 0 , 0 , 0 ,0 ,false);
+      li{
+        display: inline-block;
+        @include margin-pading(0 ,1rem , 0 , 0 );
+        position: relative;
+        line-height: 60px;
+        &::after{
+          content: '';
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 2px;
+          background-color: $blue-color;
+          transition: 0.5s ease;
+        }
+        &:hover::after{
+          width: 100%;
+        }
+          &:hover a{
+            color: $blue-color;
+          }
+        a{
+          transition: 0.5s ease;
+          color: $font-color;
+        }
+        }
+      }
+    }
+    span.social-icon{
+      @include margin-pading( 0 , 0 , 0 ,1.5rem );
+      padding-top: 21px;
+      direction: ltr;
+      a{
+        font-size: 1.1rem;
+        color: $font-color;
+        @include margin-pading(0 ,0 , 0 , 1rem );
+        transition: color 0.3s ease;
+        &:hover{
+          color: $blue-color;
+        }
+        i{
+
+        }
+      }
+    }
+  }

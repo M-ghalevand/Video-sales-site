@@ -1,0 +1,20 @@
+$font-path:'../fonts';
+$font-family:IRANSans;
+$font-style:normal;
+$font-color: rgb(46, 46, 46);
+$blue-color:rgb(54, 114, 228);
+//mixin
+@mixin flex($flex:flex , $x:center , $y:center) {
+  display: $flex;
+  justify-content: $x;
+  align-items:$y ;
+}
+
+@mixin margin-pading($top , $right , $bottom , $left ,$margin:true) {
+  @if($margin){
+  margin:$top $right $bottom $left;
+}@else{
+  padding:$top $right $bottom $left;
+}
+}
+
