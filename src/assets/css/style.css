@@ -777,7 +777,7 @@ a {
   transition: box-shadow 1s ease;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 auto;
 }
 .course:hover .teacher {
   top: -3.37rem;
@@ -854,4 +854,26 @@ a {
   border-radius: 5px;
   color: #37b537;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.path {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 6.25rem 0;
+}
+.path .left-side .path-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.path .left-side .path-title h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2.1rem;
+  color: #2e2e2e;
+}
+.path .left-side .path-title p {
+  font-size: 1.1rem;
+  line-height: 2.6rem;
+  color: #6b6b6b;
 }

@@ -1,0 +1,23 @@
+.path{
+  @include flex(flex,space-between,null);
+  @include margin-pading(0,0,6.25rem,0);
+  .right-side{
+
+  }
+  .left-side{
+    .path-title{
+      @include flex(flex,center,center);
+      flex-direction: column;
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2.1rem;
+        color: $font-color;
+      }
+      p {
+        font-size:1.1rem;
+        line-height: 2.6rem;
+        color: $grey-header-color;
+      }
+    }
+  }
+}

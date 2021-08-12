@@ -15,7 +15,7 @@
   transition: box-shadow 1s ease;
   cursor: pointer;
   box-sizing: border-box;
-  @include margin-pading(1rem , 1rem , 1rem ,1rem ,false);
+  margin: 0 auto;
    &:hover .teacher {
     top: -3.37rem;
   }
