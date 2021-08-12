@@ -6,6 +6,12 @@ html,body{
   margin: 0;
   padding: 0;
 }
+.container-fluid{
+  overflow: hidden;
+}
+.mt-100{
+  @include margin-pading(6.25rem,0,0,0,false)
+}
 ul , li{
   list-style: none;
 }

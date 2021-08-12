@@ -37,6 +37,14 @@ html, body {
   padding: 0;
 }
 
+.container-fluid {
+  overflow: hidden;
+}
+
+.mt-100 {
+  padding: 6.25rem 0 0 0;
+}
+
 ul, li {
   list-style: none;
 }
@@ -749,4 +757,101 @@ a {
 }
 #header header .left p {
   color: #2e2e2e;
+}
+
+.pipe {
+  width: 87rem;
+  background: rgba(140, 124, 229, 0.08);
+  left: -10px;
+  height: 23rem;
+  top: 5.2rem;
+  z-index: -2;
+  border-radius: 0 15.6rem 15.6rem 0;
+}
+
+.course {
+  background-color: #fff;
+  position: relative;
+  border-bottom: 4px solid red;
+  border-radius: 0 0 5px 5px;
+  transition: box-shadow 1s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.course:hover .teacher {
+  top: -3.37rem;
+}
+.course:hover .teacher-name {
+  width: 12.5rem;
+  right: 3.75rem;
+}
+.course:hover {
+  box-shadow: 0 0 13px 0 rgba(95, 95, 95, 0.5);
+}
+.course .status {
+  position: absolute;
+  font-size: 0.8rem;
+  left: 0.6rem;
+  top: 0.6rem;
+  background: rgba(46, 125, 222, 0.5);
+  color: #fff;
+  padding: 2px 6px 2px 6px;
+  border-radius: 2px;
+}
+.course .teacher {
+  position: absolute;
+  top: -2.1rem;
+  right: 0;
+  width: 3.3rem;
+  z-index: -1;
+  border-radius: 2rem 2rem 0 0;
+  transition: all 1s ease;
+}
+.course .teacher-name {
+  position: absolute;
+  top: -1.87rem;
+  right: 13px;
+  font-size: 0.8rem;
+  z-index: -2;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.5s ease;
+}
+.course .thumb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vh;
+  height: 100vh;
+}
+.course a {
+  margin: 0.62rem 0.62rem 0.62rem 0.62rem;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+}
+.course .meta {
+  display: flex;
+  font-size: 0.87rem;
+  margin: 0 0.62rem 0 0.62rem;
+  border-top: 1px solid #efefef;
+  padding: 1rem 0 0.75rem 0;
+}
+.course .meta span:nth-child(1) {
+  margin-left: auto;
+}
+.course .meta span:nth-child(1) i {
+  color: #45a1ff;
+  margin-left: 3px;
+}
+.course .meta span:nth-child(2) {
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 5px;
+  color: #37b537;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
