@@ -657,3 +657,96 @@ a {
 #menu span.social-icon a:hover {
   color: #3672e4;
 }
+#header header {
+  height: 85vh;
+  margin: 100px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#header header .right {
+  display: flex;
+  position: relative;
+}
+#header header .right .gear-1 {
+  position: absolute;
+  top: 0.5rem;
+  right: 2.2rem;
+  font-size: 2.4rem;
+  color: #6b6b6b;
+  animation: gear-1 13s infinite linear;
+}
+@keyframes gear-1 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#header header .right .gear-2 {
+  position: absolute;
+  top: -0.4rem;
+  right: 1.4rem;
+  font-size: 1.35rem;
+  color: #4e4e4e;
+  animation: gear-2 13s infinite linear;
+}
+@keyframes gear-2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#header header .right .sq-1 {
+  position: absolute;
+  top: 0;
+  left: 5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 4px solid #efefef;
+  font-size: 1.25rem;
+  color: #3672e4;
+  animation: sq-1 15s infinite linear;
+}
+@keyframes sq-1 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#header header .right .sq-2 {
+  position: absolute;
+  bottom: -1.25rem;
+  left: 8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 4px solid #ff7373;
+  font-size: 1.25rem;
+  animation: sq-2 40s infinite linear;
+}
+@keyframes sq-2 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#header header .right .sq-3 {
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 4px solid #efefef;
+  font-size: 1.25rem;
+  animation: sq-3 7s infinite linear;
+}
+@keyframes sq-3 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+#header header .left {
+  margin: 0 0 0 1.2rem;
+}
+#header header .left h1 {
+  font-size: 1.7rem;
+  color: #000;
+}
+#header header .left p {
+  color: #2e2e2e;
+}
