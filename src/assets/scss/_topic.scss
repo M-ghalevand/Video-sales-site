@@ -1,0 +1,78 @@
+.topics{
+  @include margin-pading(.125rem,auto,0,auto);
+  .topic-title {
+    font-size: 1.6rem;
+    border-right: 5px solid red;
+    padding-right: 1.2rem;
+  }
+  .topic{
+    @include flex(flex,space-between,null);
+    @include margin-pading(0,0,20px,0);
+    .card{
+      @include flex(flex,null,null);
+      @include margin-pading(20px,auto,0,auto);
+      border: 1px solid #efefef;
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    ;
+      &:hover .topic-img::before {
+        opacity: 0.6;
+      }
+      .topic-img {
+        overflow: hidden;
+        position: relative;
+        img{
+          height: 100%;
+        }
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+      }
+      .topic-detail {
+        flex-direction: column;
+        @include margin-pading(10px,10px,10px,10px,false);
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: "";
+          width: 2.5rem;
+          height: 105%;
+          background-color: #fff;
+          position: absolute;
+          top: -5px;
+          right: -1.687rem;
+          -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+          z-index: -1;
+        }
+        a {
+          font-size: 1.1rem;
+        }
+        .meta {
+          font-size: 0.75rem;
+          @include margin-pading(0.93rem,0,0,0);
+          color: #ccc;
+          span {
+            @include margin-pading(0,0,0,1rem);
+          }
+        }
+        p {
+          font-size: 14px;
+          @include margin-pading(1.25rem,0,0,0);
+          line-height: 1.87rem;
+          color:$grey-header-color;
+        }
+      }
+    }
+  }
+}

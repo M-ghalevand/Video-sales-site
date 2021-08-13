@@ -1,13 +1,17 @@
+.cours{
+  @include margin-pading(3.125rem,auto,0,auto);
+}
 .pipe {
   width: 87rem;
-  background: rgba(140, 124, 229, 0.08);
-  left: -10px;
-  height: 23rem;
-  top: 5.2rem;
-  z-index: -2;
+  background: rgba(140,124,229,.08);
+  left: -30px;
+  height: 25rem;
+  top: 6.2rem;
+  z-index: -1;
   border-radius: 0 15.6rem 15.6rem 0;
 }
 .course{
+  @include margin-pading(1.5rem,auto,1.5rem,auto);
   background-color: #fff;
   position: relative;
   border-bottom: 4px solid red;
@@ -15,7 +19,6 @@
   transition: box-shadow 1s ease;
   cursor: pointer;
   box-sizing: border-box;
-  margin: 0 auto;
    &:hover .teacher {
     top: -3.37rem;
   }

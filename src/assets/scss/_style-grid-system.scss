@@ -6,9 +6,6 @@ html,body{
   margin: 0;
   padding: 0;
 }
-.container-fluid{
-  overflow: hidden;
-}
 .mt-100{
   @include margin-pading(6.25rem,0,0,0,false)
 }
@@ -19,7 +16,7 @@ a{
   text-decoration: none;
 }
 .img-fluid{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .relative{
@@ -59,12 +56,12 @@ a{
 }
 @for $i from 1 through 12{
   .#{col}-#{$i} {
-    width: 8.333333333333333% *$i;
+    width: 8% *$i;
   }
 }
 @for $i from 1 through 12{
   .#{col-offset}-#{$i} {
-    margin-right: 8.333333333333333% *$i;
+    margin-right: 8% *$i;
   }
 }
 @media only screen  and (max-width: 790px){
@@ -76,12 +73,12 @@ a{
   }
   @for $i from 1 through 12{
     .#{col-s}-#{$i} {
-      width: 8.333333333333333% *$i;
+      width: 8% *$i;
     }
   }
   @for $i from 1 through 12{
     .#{col-s-offset}-#{$i} {
-      margin-right: 8.333333333333333% *$i;
+      margin-right: 8% *$i;
     }
   }
 
@@ -95,12 +92,12 @@ a{
   }
   @for $i from 1 through 12{
     .#{col-md}-#{$i} {
-      width: 8.333333333333333% *$i;
+      width: 8% *$i;
     }
   }
   @for $i from 1 through 12{
     .#{col-md-offset}-#{$i} {
-      margin-right: 8.333333333333333% *$i;
+      margin-right: 8% *$i;
     }
   }
 }
@@ -113,12 +110,12 @@ a{
   }
   @for $i from 1 through 12{
     .#{col-l}-#{$i} {
-      width: 8.333333333333333% *$i;
+      width: 8% *$i;
     }
   }
   @for $i from 1 through 12{
     .#{col-l-offset}-#{$i} {
-      margin-right: 8.333333333333333% *$i;
+      margin-right: 8% *$i;
     }
   }
 }
@@ -131,12 +128,12 @@ a{
   }
   @for $i from 1 through 12{
     .#{col-xl}-#{$i} {
-      width: 8.333333333333333% *$i;
+      width: 8% *$i;
     }
   }
   @for $i from 1 through 12{
     .#{col-xl-offset}-#{$i} {
-      margin-right: 8.333333333333333% *$i;
+      margin-right: 8% *$i;
     }
   }
 }
