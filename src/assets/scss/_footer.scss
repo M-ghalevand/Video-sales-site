@@ -1,0 +1,106 @@
+footer {
+  @include margin-pading(5rem, 0, 0, 0, false);
+  background-color: $backgrand-color-footer;
+
+  .side-1 {
+    @include flex(flex, center, flex-start);
+    flex-direction: column;
+
+    h5 {
+      color: #fff;
+      @include margin-pading(0, 0, 2rem, 0);
+    }
+
+    ul {
+      font-size: 1rem;
+      @include margin-pading(0, 0, 2.5rem, 0);
+      li {
+        @include margin-pading(0, 0, 1.1rem, 0);
+        color: $grey-footer-color;
+        transition: all 0.5s ease;
+        &:hover a{
+          color: $yellow-color;
+        }
+        i {
+          @include margin-pading(0, 0, 0, 0.75rem);
+        }
+        a{
+          color: $grey-footer-color;
+          i {
+            @include margin-pading(0, 0, 0, 0.75rem);
+          }
+        }
+
+      }
+    }
+  }
+  .side-2 {
+    @include flex(flex, center, flex-start);
+    flex-direction: column;
+
+    ul {
+      font-size: 1rem;
+      @include margin-pading(0, 0, 2.5rem, 0);
+      li {
+        @include margin-pading(0, 0, 1.1rem, 0);
+
+        a {
+          color: $grey-footer-color;
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: $yellow-color;
+          }
+        }
+      }
+    }
+  }
+  .side-3 {
+    @include flex(flex, center, flex-start);
+    flex-direction: column;
+    p {
+      font-weight: 600;
+      @include margin-pading(0, 0, 1.6rem, 0);
+      font-size: 1rem;
+      color: $yellow-color;
+      width: 100%;
+      text-align: center;
+    }
+    form {
+      position: relative;
+      .email {
+        width: 210%;
+        height: 2.18rem;
+        @include margin-pading(0.62rem, 0.62rem, 0.62rem, 0.62rem,false );
+        border: 0;
+        border-radius: 4px;
+        outline: 0;
+      }
+      .submit {
+        position: absolute;
+        top: 0;
+        height: 3.43rem;
+        width: 5.93rem;
+        border-radius: 4px 0 0 4px;
+        left: -13.3125rem;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        outline: 0;
+        transition: 0.5s ease;
+        &:hover {
+          background-color: $yellow-color;
+          color: $font-color;
+        }
+      }
+    }
+  }
+  p.copy-right {
+    background-color: #2b2d30;
+    text-align: center;
+    @include margin-pading(1.87rem, 0, 1.87rem, 0,false );
+    color: #cacaca;
+    font-size: 0.87rem;
+  }
+}
+

@@ -1,3 +1,58 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: IRANSans;
   src: url(../fonts/IRANSansWeb_FaNum_Light.woff2) format("woff2");
@@ -756,10 +811,6 @@ a {
   color: #2e2e2e;
 }
 
-.cours {
-  margin: 3.125rem auto 0 auto;
-}
-
 .pipe {
   width: 87rem;
   background: rgba(140, 124, 229, 0.08);
@@ -831,6 +882,9 @@ a {
   width: 100vh;
   height: 100vh;
 }
+.course img {
+  margin: 0 0 2rem 0;
+}
 .course a {
   margin: 0.62rem 0.62rem 0.62rem 0.62rem;
   font-size: 1.1rem;
@@ -839,7 +893,7 @@ a {
 .course .meta {
   display: flex;
   font-size: 0.87rem;
-  margin: 0 0.62rem 0 0.62rem;
+  margin: 2rem 0.62rem 0 0.62rem;
   border-top: 1px solid #efefef;
   padding: 1rem 0 0.75rem 0;
 }
@@ -956,4 +1010,109 @@ a {
   margin: 1.25rem 0 0 0;
   line-height: 1.87rem;
   color: #6b6b6b;
+}
+
+footer {
+  padding: 5rem 0 0 0;
+  background-color: #35373a;
+}
+footer .side-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .side-1 h5 {
+  color: #fff;
+  margin: 0 0 2rem 0;
+}
+footer .side-1 ul {
+  font-size: 1rem;
+  margin: 0 0 2.5rem 0;
+}
+footer .side-1 ul li {
+  margin: 0 0 1.1rem 0;
+  color: #cacaca;
+  transition: all 0.5s ease;
+}
+footer .side-1 ul li:hover a {
+  color: yellow;
+}
+footer .side-1 ul li i {
+  margin: 0 0 0 0.75rem;
+}
+footer .side-1 ul li a {
+  color: #cacaca;
+}
+footer .side-1 ul li a i {
+  margin: 0 0 0 0.75rem;
+}
+footer .side-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .side-2 ul {
+  font-size: 1rem;
+  margin: 0 0 2.5rem 0;
+}
+footer .side-2 ul li {
+  margin: 0 0 1.1rem 0;
+}
+footer .side-2 ul li a {
+  color: #cacaca;
+  transition: all 0.5s ease;
+}
+footer .side-2 ul li a:hover {
+  color: yellow;
+}
+footer .side-3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .side-3 p {
+  font-weight: 600;
+  margin: 0 0 1.6rem 0;
+  font-size: 1rem;
+  color: yellow;
+  width: 100%;
+  text-align: center;
+}
+footer .side-3 form {
+  position: relative;
+}
+footer .side-3 form .email {
+  width: 210%;
+  height: 2.18rem;
+  padding: 0.62rem 0.62rem 0.62rem 0.62rem;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+}
+footer .side-3 form .submit {
+  position: absolute;
+  top: 0;
+  height: 3.43rem;
+  width: 5.93rem;
+  border-radius: 4px 0 0 4px;
+  left: -13.3125rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+  transition: 0.5s ease;
+}
+footer .side-3 form .submit:hover {
+  background-color: yellow;
+  color: #2e2e2e;
+}
+footer p.copy-right {
+  background-color: #2b2d30;
+  text-align: center;
+  padding: 1.87rem 0 1.87rem 0;
+  color: #cacaca;
+  font-size: 0.87rem;
 }

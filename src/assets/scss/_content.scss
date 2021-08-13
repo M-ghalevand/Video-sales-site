@@ -1,6 +1,3 @@
-.cours{
-  @include margin-pading(3.125rem,auto,0,auto);
-}
 .pipe {
   width: 87rem;
   background: rgba(140,124,229,.08);
@@ -72,6 +69,9 @@
       height: 100vh;
     }
   }
+  img{
+    @include margin-pading(0, 0, 2rem , 0);
+  }
   a {
     @include margin-pading(0.62rem, 0.62rem, 0.62rem , 0.62rem);
     font-size: 1.1rem;
@@ -80,7 +80,7 @@
   .meta {
     @include flex(flex,null,null);
     font-size: 0.87rem;
-    @include margin-pading(0, 0.62rem, 0 , 0.62rem);
+    @include margin-pading(2rem, 0.62rem, 0 , 0.62rem);
     border-top: 1px solid #efefef;
     @include margin-pading(1rem, 0, 0.75rem, 0,false);
     span:nth-child(1) {
