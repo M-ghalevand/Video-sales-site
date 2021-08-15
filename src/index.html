@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>صفحه اصلی</title>
 </head>
@@ -17,8 +18,8 @@
             <ul class="col-6">
                 <li><a href="#">خانه</a></li>
                 <li><a href="#">دوره های آموزشی</a></li>
-                <li><a href="#">تماس با ما</a></li>
-                <li><a href="#">درباره ما</a></li>
+                <li><a class="s-hidden" href="#">تماس با ما</a></li>
+                <li><a class="s-hidden" href="#">درباره ما</a></li>
             </ul>
             <span class="social-icon col-6">
                 <a href="https://t.me/m_ghalevand" target="_blank"><i class="fab fa-telegram-plane"></i></a>
@@ -44,11 +45,9 @@
                 <span class="sq-2"></span>
                 <span class="sq-3"></span>
             </div>
-            <div class="left col-s-12 col-md-3 col-l-3 col-xl-3 col-md-offset-1 col-l-offset-1 col-xl-offset-1" data-aos="fade-right" data-aos-duration="3000">
-                <div>
+            <div class="left col-s-12 col-md-5 col-l-5 col-xl-5 " data-aos="fade-right" data-aos-duration="3000">
                     <h1> دوره های آموزشی تخصصی</h1>
-                    <p>در زمینه مباحث مبتنی بر طراحی و برنامه نویسی</p>
-                </div>
+                    <p>در زمینه مباحث طراحی وب و برنامه نویسی</p>
             </div>
         </header>
     </div>
@@ -60,7 +59,7 @@
     <div class="container relative">
         <div class="pipe absolute"></div>
         <div class="row">
-            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="zoom-in-down" data-aos-duration="3000">
                 <span class="status">در حال برگزاری</span>
                 <img class="teacher s-hidden" src="assets/images/manouchehr.png" alt="">
                 <span class="teacher-name s-hidden">مدرس: منوچهر قلعه وند</span>
@@ -71,7 +70,7 @@
                     <span>غیر رایگان</span>
                 </div>
             </div>
-            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="zoom-in-down" data-aos-duration="3000">
                 <span class="status">در حال برگزاری</span>
                 <img class="teacher s-hidden" src="assets/images/manouchehr.png" alt="">
                 <span class="teacher-name s-hidden">مدرس: منوچهر قلعه وند</span>
@@ -82,7 +81,7 @@
                     <span>غیر رایگان</span>
                 </div>
             </div>
-            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="course col-s-12 col-md-4 col-l-4 col-xl-4 " data-aos="zoom-in-down" data-aos-duration="3000">
                 <span class="status">در حال برگزاری</span>
                 <img class="teacher s-hidden" src="assets/images/manouchehr.png" alt="">
                 <span class="teacher-name s-hidden">مدرس: منوچهر قلعه وند</span>
@@ -296,5 +295,9 @@
 </footer>
 <!-- end footer -->
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -80,12 +80,16 @@
       }
     }
     .left{
-      @include margin-pading(0 , 0, 0, 1.2rem);
+      @include margin-pading(3rem , 0, 0, 2rem);
+      @include flex(flex,center,center);
+      flex-direction: column;
       h1{
-        font-size: 1.7rem;
+        @include margin-pading(3rem , 0, 0, 0);
+        font-size: 1.6rem;
         color: #000;
       }
       p{
+        @include margin-pading(3rem , 0, 0, 0);
         color: $font-color;
       }
     }

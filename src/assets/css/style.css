@@ -801,13 +801,19 @@ a {
   }
 }
 #header header .left {
-  margin: 0 0 0 1.2rem;
+  margin: 3rem 0 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #header header .left h1 {
-  font-size: 1.7rem;
+  margin: 3rem 0 0 0;
+  font-size: 1.6rem;
   color: #000;
 }
 #header header .left p {
+  margin: 3rem 0 0 0;
   color: #2e2e2e;
 }
 
